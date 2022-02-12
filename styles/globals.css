@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #4f4f4f;
+  }
+
+  .container {
+    @apply mx-auto;
+    max-width: 1400px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium;
+  }
+}
+
+@layer components {
+  .font-size-32 {
+    font-size: 32px;
+  }
+
+  .font-size-22 {
+    font-size: 22px;
+  }
+
+  .font-size-46 {
+    font-size: 46px;
+  }
+
+  .bs-button-bg {
+    background: color #4f4f4f;
+  }
+
+  .bs-icon-box {
+    width: 60px;
+    height: 60px;
+    @apply rounded-full;
+  }
+
+  .bs-dark-orange-bg {
+    background-color: #ff5c00;
+  }
+
+  .bs-dark-orange-color {
+    color: #ff5c00;
+  }
+
+  .bs-dark-green-bg {
+    background-color: #26ae60;
+  }
+
+  .bs-dark-green-color {
+    color: #26ae60;
+  }
+
+  .slider-bg {
+    background-color: #ebfaeb;
+  }
+
+  .bs-button {
+    @apply bs-dark-green-bg text-white rounded-full px-6 py-2;
+  }
+
+  .bs-white-btn {
+    @apply bg-white bs-dark-orange-color rounded-full px-6 py-2;
+  }
+
+  .promo-bg-1 {
+    background-image: url("../public/images/Promo-bg-1.png");
+  }
+
+  .promo-bg-2 {
+    background-image: url("../public/images/Promo-bg-2.png");
+  }
+
+  .promo-bg-3 {
+    background-image: url("../public/images/Promo-bg-3.png");
+  }
+
+  .promo-bg-4 {
+    background-image: url("../public/images/Promo-bg-4.png");
+  }
+
+  .promo-bg-5 {
+    background-image: url("../public/images/Promo-bg-5.png");
+  }
+
+  .accordion__button {
+    background-color: #ebfaeb !important;
+  }
+
+  .accordion__button:before {
+    position: absolute !important;
+    right: 0 !important;
+  }
+
+  .accordion__button.sibling {
+    background-color: white !important;
+    box-shadow: 0 0 0px 0;
+    border: none !important;
+  }
+
+  .accordion__panel {
+    padding: 10px !important;
+  }
+
+  .accordion__item {
+    border: none !important;
+  }
+
+  .accordion {
+    border: none;
+  }
+
+  .panel-body {
+    border-radius: 10px;
+  }
+
+  .modal-body {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .input-box {
+    @apply mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+    focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+    disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+    invalid:border-pink-500 invalid:text-pink-600
+    focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+  }
+
+  .cart-item-hight {
+    height: calc(100vh - 115px);
+  }
+}
